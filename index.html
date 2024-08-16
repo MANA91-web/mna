@@ -9,36 +9,38 @@
 <body>
     <h1>Project Time Schedule</h1>
     <table>
-        <thead>
-            <tr>
-                <th>Deliverable</th>
-                <th>Owner</th>
-                <th>Start Date</th>
-                <th>Deadline</th>
-                <th>Status</th>
-                <th>April</th>
-                <th>May</th>
-                <th>June</th>
-                <th>Notes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Example row -->
-            <tr>
-                <td>Copy draft V1</td>
-                <td>Max</td>
-                <td>1-Apr</td>
-                <td>7-Apr</td>
-                <td>Complete</td>
-                <td class="timeline"><div class="progress complete"></div></td>
-                <td></td>
-                <td></td>
-                <td>Slight delay in copy - reflected in schedule</td>
-            </tr>
-            <!-- Add other rows similarly -->
-        </tbody>
-    </table>
-    
+    <thead>
+        <tr>
+            <th>Deliverable</th>
+            <th>Owner</th>
+            <th>Start Date</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>April</th>
+            <th>May</th>
+            <th>June</th>
+            <th>Notes</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="task-list">
+        <!-- Example row -->
+        <tr>
+            <td contenteditable="true">Copy draft V1</td>
+            <td contenteditable="true">Max</td>
+            <td contenteditable="true">1-Apr</td>
+            <td contenteditable="true">7-Apr</td>
+            <td contenteditable="true">Complete</td>
+            <td class="timeline"><div class="progress complete"></div></td>
+            <td></td>
+            <td></td>
+            <td contenteditable="true">Slight delay in copy - reflected in schedule</td>
+            <td><button class="save-btn">Save</button></td>
+        </tr>
+        <!-- Add other rows similarly -->
+    </tbody>
+</table>
+    <script src="script.js"></script>
     <footer>
         <p>&copy; 2024 Project. All Rights Reserved.</p>
     </footer>
