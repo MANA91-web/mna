@@ -3,43 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PJ</title>
+    <title>Project Time Schedule</title>
     <link rel="stylesheet" href="assets/css/stylees.css">
 </head>
 <body>
-    <header>
-        <h1>Project Bang Jep</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-       
-    <section id="portfolio">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Existing Tanki Mixing</h3>
-            <p>Description of the project.</p>
-            <a href="file:///C:/Users/RnD/OneDrive/Documents/Rev1 Schematic Existing Tanki Mixer - Tanki Air - Liquid Ring-Model.pdf">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Trial Solberg</h3>
-            <p>Description of the project.</p>
-            <a href="file:///C:/Users/RnD/OneDrive/Documents/Rev1 Schematic Trial Tanki Mixer - Filter Solberg - Tanki Air - Liquid Ring_Model.pdf">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Rencana Solberg</h3>
-            <p>Description of the project.</p>
-            <a href="file:///C:/Users/RnD/OneDrive/Documents/Rev1 Schematic Rencana Tanki Mixer - Filter Solberg - Tanki Air - Liquid Ring-Model.pdf">View Project</a>
-        </div>
-    </section>
+    <h1>Project Time Schedule</h1>
+    <form id="task-form" enctype="multipart/form-data">
+        <input type="text" id="task-name" placeholder="Task Name" required>
+        <input type="date" id="task-deadline" required>
+        <input type="file" id="task-file" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+    <script src="script.js"></script>
     
     <footer>
-        <p>&copy; 2024 Project Bang Jep. All Rights Reserved.</p>
+        <p>&copy; 2024 Project. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
