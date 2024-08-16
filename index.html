@@ -8,17 +8,36 @@
 </head>
 <body>
     <h1>Project Time Schedule</h1>
-    <form id="task-form" enctype="multipart/form-data">
-    <input type="text" id="task-name" placeholder="Task Name" required>
-    <input type="date" id="task-deadline" required>
-    <textarea id="task-desc" placeholder="Task Description" required></textarea>
-    <input type="file" id="task-file" required>
-    <label for="highlight">Highlight:</label>
-    <input type="checkbox" id="highlight">
-    <button type="submit">Add Task</button>
-</form>
-    <ul id="task-list"></ul>
-    <script src="script.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>Deliverable</th>
+                <th>Owner</th>
+                <th>Start Date</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>April</th>
+                <th>May</th>
+                <th>June</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row -->
+            <tr>
+                <td>Copy draft V1</td>
+                <td>Max</td>
+                <td>1-Apr</td>
+                <td>7-Apr</td>
+                <td>Complete</td>
+                <td class="timeline"><div class="progress complete"></div></td>
+                <td></td>
+                <td></td>
+                <td>Slight delay in copy - reflected in schedule</td>
+            </tr>
+            <!-- Add other rows similarly -->
+        </tbody>
+    </table>
     
     <footer>
         <p>&copy; 2024 Project. All Rights Reserved.</p>
