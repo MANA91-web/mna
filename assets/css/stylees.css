@@ -15,7 +15,7 @@ header {
     color:  #00ffffff;
     padding: 10px 0;
     text-align: center;
-    opacity: 0.75; /* Seluruh elemen menjadi transparan 50% */
+    opacity: 0.5; /* Seluruh elemen menjadi transparan 50% */
 }
 
 nav ul {
@@ -50,5 +50,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-	opacity: 0.75;
+	opacity: 0.5;
 }
