@@ -8,11 +8,16 @@ document.getElementById('task-form').addEventListener('submit', function(e) {
     const li = document.createElement('li');
     const fileURL = URL.createObjectURL(taskFile);
 
-    li.innerHTML = `${taskName} - Due: ${taskDeadline} - <a href="${fileURL}" target="_blank">View File</a>`;
+    li.innerHTML = `${taskName} - Due: ${taskDeadline} - <a href="${fileURL}" target="_blank">View File</a> <button class="delete-btn">Delete</button>`;
 
     document.getElementById('task-list').appendChild(li);
 
     document.getElementById('task-name').value = '';
     document.getElementById('task-deadline').value = '';
     document.getElementById('task-file').value = '';
+
+    // Add delete functionality
+    li.querySelector('.delete-btn').addEventListener('click', function() {
+        li.remove();
+    });
 });
